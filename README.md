@@ -29,6 +29,26 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
+## BMAD Installation (Workflows de développement)
+
+Ce projet utilise BMAD (Business Model & Agile Development) pour la gestion des workflows de planification et développement.
+
+**Installation initiale (sur nouveau clone) :**
+
+```bash
+npx @bmad/cli init
+```
+
+Suivez les instructions interactives pour configurer BMAD selon vos besoins.
+
+**Outputs préservés :**
+- `_bmad-output/` contient les artifacts de planification (Product Brief, PRD, etc.)
+- Ces fichiers **sont versionnés** dans le repo
+
+**Workflows internes exclus :**
+- `_bmad/`, `.agent/`, `.claude/` et `.github/agents/` ne sont **pas versionnés** (voir `.gitignore`)
+- Ils sont recréés automatiquement lors de l'installation npx
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.

@@ -39,3 +39,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# BMAD workflows and AI agent configs (install via npx - see README)
+_bmad/
+.agent/
+.claude/
+.github/agents/
+
+# Keep BMAD outputs (planning artifacts)
+!_bmad-output/
